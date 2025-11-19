@@ -1,9 +1,8 @@
 const decrement = (itemId) => {
   const newOrder = order.map((item) => {
     if (item.id === itemId) {
-      const newQuantity =
-        item.quantity <= 0 ? (item.quantity = 0) : item.quantity - 1;
-      toast.error("1 dona mahsulot ayrildi!");
+      const newQuantity = item.quantity <= 0 ? (item.quantity = 0) : item.quantity - 1;
+      toast.error('1 dona mahsulot ayrildi!');
 
       return {
         ...item,
